@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width:100vw;
+    height:100vh;
+}
+
+h1, h2, h3
+{
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size:2em;
+}
+p, nav div
+{
+    font-family: "Alata";
+}
+
+/* -------------Header------------ */
+#close-menu-btn {display: none;}
+#mobile-menu 
+{
+    display:none;
+    position: absolute;
+    top:5em;
+    width:100%;
+    height:88%;
+    background-color: rgba(0, 0, 0, 1);
+
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    gap:1.5em;
+    color:white;
+}
+#mobile-menu div
+{
+    font-size: 2em;    
+    font-weight: 100;
+    text-transform: uppercase;
+    /* padding-left: 1em;     */
+}
+header
+{
+    background-image: url("images/mobile/image-hero.jpg") ;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+#menu-pannel
+{
+    display:flex;
+    justify-content: space-between;
+    padding: 2em 0em;    
+    width:100vw;
+    margin-bottom: 60%;
+}
+#header-logo
+{
+    width:40vw;
+    padding-left: 2em;
+}
+#menu-btn
+{
+    width:auto;
+    height:1em;
+    margin-top: 0.2em;
+    padding-right: 2em;
+}
+#close-menu-btn
+{
+    padding-right: 2em;
+}
+#title-pannel
+{
+    border: 2px white solid;
+    width: 80%;
+}
+#title-pannel h1
+{
+    color: white;
+    padding: 1em;
+
+}
+/* -------------Section 1------------ */
+#intro-pannel
+{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5em 0 5em 0;
+}
+#intro-pannel img
+{
+    width:90%;
+    margin-bottom: 3em;
+}
+#intro-text-pannel
+{
+    width:80%;
+    margin: 0 auto;
+}
+#intro-text-pannel h2
+{
+    padding-bottom: 1em;
+    color: rgb(66, 66, 66);
+}
+#intro-text-pannel p
+{
+    color: rgb(94, 94, 94);
+}
+/* -------------Section 2------------ */
+#creation-title-pannel
+{
+    margin: 0;
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+#creation-pannel h2
+{
+
+    font-size: 2.5em;
+    color: rgb(66, 66, 66);
+}
+.grid-elem 
+{
+    position: relative;    
+    margin-bottom: 2em;
+    width:100%;
+}
+.grid-elem img
+{
+    display:block;
+    width: 101%;
+    margin: 0;
+    filter: brightness(70%) contrast(140%);
+}
+h3
+{
+    position:absolute;
+    bottom:1em;
+    left:1em;
+    color:white;
+    text-shadow: 1px 0px 3px rgba(0,0,0,1);
+    opacity: 1;
+    width: 40%;
+    font-size: 1.8em;
+}
+#see-all-desktop {display:none;}
+#see-all
+{ 
+    font-size: 0.6em;
+    text-align: center;    
+    padding: 1.5em 0;
+    color:black;
+    border: 2px black solid;
+    width:50%;
+    margin-bottom: 3em;
+    margin:5em auto 10em auto;
+}
+/* -------------Footer------------ */
+footer
+{
+    height:auto;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+#footer-logo
+{
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+footer div
+{
+    color:white;
+    font-family: "Alata";    
+    text-align: center;
+    margin-bottom: 2em;
+}
+#rights
+{
+    color:grey;
+}
+#social-networks
+{
+    display:flex;
+    gap:1.5em;
+    justify-content:center
+}
