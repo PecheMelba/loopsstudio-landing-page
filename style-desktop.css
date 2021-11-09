@@ -1,22 +1,27 @@
 @media all and (min-width: 900px)
 {
     /* --------------header------------ */
+    *{margin:0; padding: 0;}
+    body {width:auto;}
     header
     {
         background: url("images/desktop/image-hero.jpg") no-repeat;
-        background-size: 100vw auto;
+        background-size: 100% auto;
         width: 100%;
         height: 80vh;
         align-items:flex-start;
     }
     #menu-pannel
-    {
-        padding: 2em 2em;    
-        margin: 0;
-    }
+    {        
+        width:80%;   
+        margin: 0 auto;
+    } 
     #header-logo
     {
-        width:10vw;
+        width:auto;
+        height:100%;
+        position: relative;
+        left: -2em;
     }
 
     #menu-btn {display: none;}
@@ -24,8 +29,8 @@
     {
         display: flex;
         flex-direction: row;
-        position: inherit;
-        width:auto;
+        position: initial;
+        width:auto;        
         background-color: rgba(0, 0, 0, 0);
     }
     #mobile-menu div
@@ -33,9 +38,8 @@
         font-size: 1em;    
         text-transform: none;
         padding-left: 0em;   
-        padding-bottom: 1em;
+        padding-bottom: 1em;        
         border-bottom: 2px solid rgba(255, 255, 255, 0);
-
     }
     #mobile-menu div:hover
     {
@@ -45,7 +49,7 @@
     #title-pannel
     {
         width: 50%;
-        margin: 4% 0 0em 2em;
+        margin: 2% 0 0em 10%;
     }
     #title-pannel h1
     {
@@ -56,7 +60,7 @@
     {
         width: 80%;
         display: flex;
-        height: 50vh;
+        height: auto;
         margin-bottom: 10em;
     }
     #intro-pannel img
@@ -67,19 +71,19 @@
     }
     #intro-text-pannel
     {
-        position:absolute;
-        bottom:-76%;
-        right:10%;
-        margin: 0;
+        position: relative;
+        right:10em;
         
-        width:30vw;
-        padding: 5em 5em 0 5em;
+        width:auto;
+        padding: 5em 0 0 5em;    
         text-align: left;
+        align-self: flex-end;
         background-color: white;
     }
     #intro-text-pannel h2
     {
         font-size: 2.5em;
+        width:30vw;
     }
     /* ------------section2--------- */
     #creation-pannel
@@ -112,6 +116,7 @@
     #see-all-desktop:hover
     {
         background-color: black;
+        cursor: pointer;
     }
     #see-all-desktop:hover #see-all-h2
     {
@@ -162,10 +167,10 @@
        color:rgb(0, 0, 0);
        text-shadow: 1px 0px 3px rgba(0,0,0,0);
     }
-    body
+    /* body
     {
         width:auto;
-    }
+    } */
 
     /* -------------------footer----------------- */
     footer
